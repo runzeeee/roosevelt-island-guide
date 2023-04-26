@@ -18,10 +18,12 @@ img {
 /* 添加新的样式 */
 #main-content {
   position: relative;
+  background-color: #CEAEB9;
 }
 
 #main-content img.island {
   z-index: 1;
+  height: 740px;
 }
 
 #main-content img.small-icon {
@@ -46,4 +48,26 @@ img {
 
 #main-content img.walk {
   top: 216px; /* (60px (height) + 12px (spacing)) * 3 */
+}
+
+#rivaapage {
+  background-color: #CEAEB9;
+  position: relative;
+}
+
+#rivaapage button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  background: none;
+}
+
+#rivaapage button img {
+  width: 32px;
+  height: 32px;
+}
+
+#rivaapage img {
+  max-height: 740px;
 }
