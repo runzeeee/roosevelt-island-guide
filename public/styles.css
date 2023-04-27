@@ -71,3 +71,69 @@ img {
 #rivaapage img {
   max-height: 740px;
 }
+
+#walkpage {
+  background-color: #CEAEB9;
+  position: relative;
+}
+
+#walkpage button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  background: none;
+}
+
+#walkpage button img {
+  width: 32px;
+  height: 32px;
+}
+
+#walkpage img {
+  max-height: 740px;
+}
+
+#buspage {
+  background-color: #CEAEB9;
+  position: relative;
+}
+
+#buspage button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  background: none;
+}
+
+#buspage button img {
+  width: 32px;
+  height: 32px;
+}
+
+#buspage img {
+  max-height: 740px;
+}
+
+#eatpage {
+  background-color: #CEAEB9;
+  position: relative;
+}
+
+#eatpage button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  background: none;
+}
+
+#eatpage button img {
+  width: 32px;
+  height: 32px;
+}
+
+#eatpage img {
+  max-height: 740px;
+}

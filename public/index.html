@@ -15,9 +15,24 @@
       document.getElementById('main-content').style.display = 'none';
       document.getElementById('rivaapage').style.display = 'block';
     }
+    function showBusPage() {
+      document.getElementById('main-content').style.display = 'none';
+      document.getElementById('buspage').style.display = 'block';
+    }
+    function showWalkPage() {
+      document.getElementById('main-content').style.display = 'none';
+      document.getElementById('walkpage').style.display = 'block';
+    }
+    function showEatPage() {
+      document.getElementById('main-content').style.display = 'none';
+      document.getElementById('eatpage').style.display = 'block';
+    }
 
     function returnToMainPage() {
       document.getElementById('rivaapage').style.display = 'none';
+      document.getElementById('buspage').style.display = 'none';
+      document.getElementById('walkpage').style.display = 'none';
+      document.getElementById('eatpage').style.display = 'none';
       // 在这里添加其他页面的隐藏代码
       document.getElementById('main-content').style.display = 'block';
     }
@@ -34,16 +49,37 @@
     <img class="island" src="./images/mainpage/island.png" alt="island" />
     
     <img class="small-icon rivaa" src="./images/mainpage/RIVAA.png" alt="rivaa" onclick="showRivaaPage()" />
-    <img class="small-icon bus" src="./images/mainpage/BUS.png" alt="bus" />
-    <img class="small-icon eat" src="./images/mainpage/EAT.png" alt="eat" />
-    <img class="small-icon walk" src="./images/mainpage/WALK.png" alt="walk" />
+    <img class="small-icon bus" src="./images/mainpage/BUS.png" alt="bus" onclick="showBusPage()" />
+    <img class="small-icon eat" src="./images/mainpage/EAT.png" alt="eat" onclick="showEatPage()" />
+    <img class="small-icon walk" src="./images/mainpage/WALK.png" alt="walk" onclick="showWalkPage()" />
   </div>
   
   <div id="rivaapage" style="display: none;">
     <button onclick="returnToMainPage()" style="border:none;background:none;">
-      <img src="./images/backarrow.png" alt="返回" />
+      <img src="./images/backarrow.png" alt="back" />
     </button>
     <img src="./images/rivaapage/rivaapage.png" alt="rivaapage" />
+  </div>
+
+  <div id="buspage" style="display: none;">
+    <button onclick="returnToMainPage()" style="border:none;background:none;">
+      <img src="./images/backarrow.png" alt="back" />
+    </button>
+    <img src="./images/buspage/buspage.png" alt="buspage" />
+  </div>
+
+  <div id="walkpage" style="display: none;">
+    <button onclick="returnToMainPage()" style="border:none;background:none;">
+      <img src="./images/backarrow.png" alt="back" />
+    </button>
+    <img src="./images/walkpage/walkpage.png" alt="rivaapage" />
+  </div>
+
+  <div id="eatpage" style="display: none;">
+    <button onclick="returnToMainPage()" style="border:none;background:none;">
+      <img src="./images/backarrow.png" alt="back" />
+    </button>
+    <img src="./images/eatpage/eatpage.png" alt="eatpage" />
   </div>
 </body>
 </html>
